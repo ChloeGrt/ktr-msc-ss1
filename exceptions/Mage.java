@@ -6,15 +6,14 @@ public class Mage extends Character {
     public Mage(String name) {
         super(name, "Mage");
         System.out.println( name + ": May the gods be with me.");
+        this.life = 70;
+        this.agility = 10;
+        this.strength = 3;
+        this.wit = 10;
     }
-    protected int life = 70;
-    protected int agility = 10;
-    protected int strength = 3;
-    protected int wit = 10;
-
     public void attack(String weapon){
         System.out.println(getName()+": Rrrrrrrrr....");
-        if(weapon =="magic" || weapon =="wand"){
+        if(Objects.equals(weapon, "magic") || Objects.equals(weapon, "wand")){
             System.out.println( getName()+" : Feel the power of my "+ weapon +"!");
         }
     }

@@ -6,16 +6,16 @@ public class Warrior extends Character {
     public Warrior(String name) {
         super(name, "Warrior");
         System.out.println( name + ": My name will go down in history !");
+        this.life = 100;
+        this.agility = 8;
+        this.strength = 10;
+        this.wit = 3;
     }
-    protected int life = 100;
-    protected int agility = 8;
-    protected int strength = 10;
-    protected int wit = 3;
 
     public void attack(String weapon){
         System.out.println(getName() + " : Rrrrrrrrr....");
         if(Objects.equals(weapon, "hammer") || Objects.equals(weapon, "sword")){
-            System.out.println(getName() + " : I'll crush you with my "+ weapon +" !");
+            System.out.println(getName() + " : I'll crush you with my " + weapon + " !");
         }
     }
     @Override
