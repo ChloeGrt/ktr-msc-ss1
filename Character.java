@@ -1,6 +1,6 @@
 import java.sql.SQLOutput;
 
-public abstract class Character {
+public abstract class Character implements Movable {
     protected String name;
     protected int life = 50;
     protected int agility = 2;
@@ -36,7 +36,24 @@ public abstract class Character {
     public String getRpgClass() {
         return rpgClass;
     }
+
     public void attack(String attack){
-        System.out.println(getName()+": Rrrrrrrrr....");
+        System.out.println(getName() + ": Rrrrrrrrr....");
+    }
+
+    public void moveRight() {
+        System.out.println(getName() + ": moves right");
+    }
+
+    public void moveLeft() {
+        System.out.println(getName() + ": moves left");
+    }
+
+    public void moveForward() {
+        System.out.println(getName() + ": moves forward");
+    }
+
+    public void moveBack() {
+        System.out.println(getName() + ": moves back");
     }
 }
