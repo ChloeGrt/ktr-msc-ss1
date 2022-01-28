@@ -37,6 +37,6 @@ public abstract class Character {
         return rpgClass;
     }
     public void attack(String attack){
-        System.out.println( "["+getName()+"] : Rrrrrrrrr....");
+        System.out.println(getName()+": Rrrrrrrrr....");
     }
 }
